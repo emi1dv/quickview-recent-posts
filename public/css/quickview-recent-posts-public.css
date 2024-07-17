@@ -1,0 +1,53 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+ .quickview-recent-posts-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.quickview-recent-post {
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.quickview-recent-post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.quickview-post-thumbnail img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.quickview-post-content h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.quickview-post-content p {
+    font-size: 1em;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .quickview-recent-post {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .quickview-recent-post {
+        flex: 1 1 100%;
+    }
+}

@@ -1,0 +1,27 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+.wrap h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+pre {
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: auto;
+    font-size: 14px;
+}
+
+.description {
+    font-size: 14px;
+    color: #555;
+}
